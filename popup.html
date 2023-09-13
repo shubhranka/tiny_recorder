@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="popup.css" />
+    <title>Recorder</title>
+  </head>
+  <body>
+    <div id="loader">Loading</div>
+    <div id="content" class="hidden">
+      <div id="started">
+        <div class="heading">
+          <h1>Recorder</h1>
+        </div>
+        <div class="button_row">
+          <button id="screen">Screen 📺</button>
+          <button id="video">Video 📹</button>
+          <button id="currentTab">Current Tab 👆</button>
+        </div>
+        <div class="button_row">
+          <button id="comAud">Computer Audio 🔈</button>
+          <button id="mic">Mic 🎤</button>
+        </div>
+        <div class="button_row">
+          <button id="timed">Timed ⏰</button>
+          <button id="record">Record ⏺</button>
+        </div>
+        <form>
+          <div class="input_holder">
+            <input type="number" name="hours" placeholder="Hours" />
+          </div>
+
+          <div class="input_holder">
+            <input type="number" name="minutes" placeholder="Minutes" />
+          </div>
+          <div class="input_holder">
+            <input type="number" name="seconds" placeholder="Seconds" />
+          </div>
+          <div class="input_holder">
+            <input type="submit" value="Start" />
+          </div>
+        </form>
+      </div>
+
+      <div id="recording" class="hidden">
+        <div class="heading">
+          <h1 id="recording_time">Recording</h1>
+        </div>
+        <div class="button_row">
+          <button id="pause">Pause ⏸</button>
+          <button id="stopRec">Stop ⏹</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

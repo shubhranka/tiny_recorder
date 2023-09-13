@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "Reading time",
+    "version": "1.0",
+    "description": "Console out in the current tab",
+    "background":{
+        "service_worker": "background.js"       
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "management",
+        "nativeMessaging",
+        "storage",
+        "desktopCapture"
+    ],
+    "action":{
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["recorder.js"]
+        }
+    ],
+    "commands":{
+        "Ctrl+M" : {
+            "suggested_key": {
+                "default": "Ctrl+M",
+                "mac": "Command+M"
+            },
+            "description": "Reload"
+        },
+        "Ctrl+K" : {
+            "suggested_key": {
+                "default": "Ctrl+K",
+                "mac": "Command+K"
+            },
+            "description": "Reload"
+        }
+    }
+  }

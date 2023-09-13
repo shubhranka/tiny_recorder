@@ -1,0 +1,136 @@
+:root{
+    --background:#000000;
+    --secondary:#74f0ed;
+    --primary:#EA445a;
+    --white:#fff;
+}
+
+.heading{
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button_row{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+button{
+    background-color: var(--secondary);
+    border: none;
+    width: 100%;
+    margin-left: 1%;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comAud{
+    flex: 2;
+}
+
+#mic{
+    flex: 1;
+}
+
+/* Nice background */
+body{
+    position: relative;
+    background: var(--white);
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/* Popup box */
+form{
+    /* background: #fff; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    height: 0;
+}
+/* Nice and well formatted inputs */
+input{
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    margin-bottom: 2px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #74f0ee83;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* Placeholder */
+::-webkit-input-placeholder {
+    color: #0000006e;
+}
+
+.active{
+    background-color: #ea445aa2;
+}
+
+input[type=submit]{
+    border: none;
+    outline: none;
+    width: fit-content;
+    padding: 10px 30px;
+    color: #c02626ca;
+    background-color: #ffffffe0;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top:10px;
+}
+
+/* Remove number toggle from input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#top_left_button{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    /* background-color: transparent; */
+    width: fit-content;
+}
+
+.hidden{
+    display: none;
+}
+
+.input_holder{
+    text-align: center;
+}
+
+#record{
+    color: #c02626ca;
+    background-color: #ffffffe0;
+}
+
+#loader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
